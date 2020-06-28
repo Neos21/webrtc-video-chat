@@ -1,0 +1,30 @@
+{
+  "name": "webrtc-video-chat",
+  "description": "WebRTC Video Chat",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Neo <neos21@gmail.com> (http://neo.s21.xrea.com/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Neos21/webrtc-video-chat#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/webrtc-video-chat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/webrtc-video-chat/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "socket.io": "2.3.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
