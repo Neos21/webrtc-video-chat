@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if(parsedEvent.sdp.type === 'offer') {
             console.log('on message : SDP Offer', parsedEvent);
             
-            // type: 'answer' 時に createAnswer() すると以下のデラーが出るので type: 'offer' のみにする
+            // type: 'answer' 時に createAnswer() すると以下のエラーが出るので type: 'offer' のみにする
             // Failed to execute 'createAnswer' on 'RTCPeerConnection': PeerConnection cannot create an answer in a state other than have-remote-offer or have-local-pranswer.
             const answer = await rtcPeerConnection.createAnswer();
             
