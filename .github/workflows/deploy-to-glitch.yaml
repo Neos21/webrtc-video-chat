@@ -1,0 +1,15 @@
+name: Deploy To Glitch
+on:
+  push:
+    branches:
+      - master
+    workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy To Glitch
+        uses: kanadgupta/glitch-sync@master
+        with:
+          project-id: '${{ secrets.PROJECT_ID }}'
+          auth-token: '${{ secrets.AUTH_TOKEN }}'
